@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --circle1: #fe9852;
+    --circle2: #ff7773;
+    --body: #f7f5f6;
+    --container: #ffffff;
+    --p: #2f3047;
+    --gray: #74787d;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body);
+    color: var(--p);
+    font-family: 'Poppins';
+}
+.container{
+    width: 400px;
+    background: var(--container);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px #f9836b69;
+    position: relative;
+    padding: 50px 50px;
+    overflow: hidden;
+    z-index: 23;
+}
+header{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+header h1{
+    font-size: 20px;
+}
+
+header a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header a:hover{
+    color: blue;
+}
+
+.request{
+    z-index: 2;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+
+}
+.profile{
+    display: flex;
+    cursor: pointer;
+}
+.request img{
+    margin-left: 20px;
+    width: 50px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: green;
+}
+.request .info{
+    margin-left: 20px;
+    z-index: 100;
+    transition: 0.5s;
+}
+.info .matual{
+    margin-left: -30px;
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.info:hover .matual{
+    display: flex;
+}
+.info:hover .mutual{
+    display: none;
+}
+.matual img{
+    width: 20px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 50%;
+    margin-left: -8px;
+}
+.info h1{
+    font-size: 18px;
+    color: #525356;
+}
+.info p{
+    font-size: 12px;
+    transition: 0.5s;
+}
+
+.request button{
+    width: 80px;
+    height: 40px;
+    border: none;
+    background: #fffffe;
+    display: inline-block;
+    box-shadow: 0 5px 5px rgb(0, 0, 0,0.1);
+    border-radius: 5px;
+    font-size: 12px;
+    color: var(--gray);
+    cursor: pointer;
+}
+.outer{
+    position: absolute;
+    width: 400px;
+    aspect-ratio: 1;
+    background: var(--circle1);
+    border-radius: 50%;
+    bottom: -90%;
+    left: -30%;
+    z-index: 1;
+}
+.inner{
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    background-color: var(--circle1);
+    border-bottom-left-radius: 40%;
+    width: 400px;
+    aspect-ratio: 1;
+    z-index: -1;
+}
